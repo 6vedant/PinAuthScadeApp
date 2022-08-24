@@ -8,7 +8,7 @@ class MainPageAdapter: SCDLatticePageAdapter {
   var pinString = ""
 
   let secondPage: SecondpagePageAdapter = SecondpagePageAdapter()
-  
+
   override func load(_ path: String) {
     super.load(path)
 
@@ -86,19 +86,20 @@ class MainPageAdapter: SCDLatticePageAdapter {
 
       } else if position == 5 {
         self.digit_5.text = String(val)
-        pinString = "\(self.digit_1.text)\(self.digit_2.text)\(self.digit_3.text)\(self.digit_4.text)\(self.digit_5.text)"
+        pinString =
+          "\(self.digit_1.text)\(self.digit_2.text)\(self.digit_3.text)\(self.digit_4.text)\(self.digit_5.text)"
         self.callFinalMethod(pin: pinString)
-        
+
       } else {
         position = 5
         print("Exceeded")
       }
     }
   }
-  
-  func callFinalMethod(pin: String) -> Void {
-  		print("Final 5-digit pincode: \(pin)")
-  		
+
+  func callFinalMethod(pin: String) {
+    print("Final 5-digit pincode: \(pin)")
+
   }
-  
+
 }
