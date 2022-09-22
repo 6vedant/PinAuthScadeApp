@@ -1,4 +1,4 @@
 # PinAuthScadeApp
 
 
-![gif_scade](/screenshot/screen_gif.gif) 
+![gif_scade](/screenshot/updated_gif.gif) 
